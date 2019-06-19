@@ -24,10 +24,6 @@ import java.util.Locale;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-/**
- * Created by tunggul.jati on 14/08/2018.
- */
-
 public class LibraryCrash {
     //Extras passed to the error activity
     private static final String EXTRA_RESTART_ACTIVITY_CLASS = "id.co.ilcs.eos.util.LibraryCrash.EXTRA_RESTART_ACTIVITY_CLASS";

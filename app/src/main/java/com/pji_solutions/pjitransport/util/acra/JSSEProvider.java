@@ -3,10 +3,6 @@ package com.pji_solutions.pjitransport.util.acra;
 import java.security.AccessController;
 import java.security.Provider;
 
-/**
- * Created by tunggul.jati on 14/08/2018.
- */
-
 public class JSSEProvider extends Provider {
 
     public JSSEProvider() {

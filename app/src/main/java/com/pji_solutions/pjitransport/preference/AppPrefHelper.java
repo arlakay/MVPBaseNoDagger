@@ -4,10 +4,6 @@ import android.content.SharedPreferences;
 
 import com.pji_solutions.pjitransport.BaseApplication;
 
-/**
- * Created by tunggul.jati on 14/08/2018.
- */
-
 public class AppPrefHelper {
 
     private static SharedPreferences appPreferences;

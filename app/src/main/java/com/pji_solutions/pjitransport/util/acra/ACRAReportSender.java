@@ -14,10 +14,6 @@ import org.acra.sender.ReportSenderException;
 import java.util.Date;
 import java.util.regex.Pattern;
 
-/**
- * Created by tunggul.jati on 14/08/2018.
- */
-
 public class ACRAReportSender implements ReportSender {
     private String emailUsername ;
     private String emailPassword ;

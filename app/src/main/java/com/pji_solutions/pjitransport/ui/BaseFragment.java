@@ -2,11 +2,11 @@ package com.pji_solutions.pjitransport.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-import android.support.v4.app.Fragment;
 
 import com.pji_solutions.pjitransport.BaseApplication;
 import com.pji_solutions.pjitransport.R;
@@ -14,10 +14,6 @@ import com.pji_solutions.pjitransport.network.FirstNetworkAPI;
 
 import butterknife.BindString;
 import butterknife.ButterKnife;
-
-/**
- * Created by tunggul.jati on 15/08/2018.
- */
 
 public abstract class BaseFragment extends Fragment {
 

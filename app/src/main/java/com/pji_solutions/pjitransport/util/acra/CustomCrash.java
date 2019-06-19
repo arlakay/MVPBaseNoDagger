@@ -1,12 +1,6 @@
 package com.pji_solutions.pjitransport.util.acra;
 
 import android.app.Activity;
-import android.os.Bundle;
-import android.os.Handler;
-
-/**
- * Created by tunggul.jati on 14/08/2018.
- */
 
 public class CustomCrash extends Activity {
 

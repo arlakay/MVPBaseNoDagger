@@ -4,23 +4,14 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.Menu;
-import android.view.View;
 import android.widget.Toast;
 
 import com.pji_solutions.pjitransport.BaseApplication;
 import com.pji_solutions.pjitransport.R;
 import com.pji_solutions.pjitransport.network.FirstNetworkAPI;
 
-import java.lang.reflect.Method;
-
 import butterknife.BindString;
 import butterknife.ButterKnife;
-
-/**
- * Created by tunggul.jati on 15/08/2018.
- */
 
 public abstract class BaseActivity extends AppCompatActivity {
 

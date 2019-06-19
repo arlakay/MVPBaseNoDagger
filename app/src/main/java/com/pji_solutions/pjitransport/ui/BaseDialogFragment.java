@@ -22,10 +22,6 @@ import com.pji_solutions.pjitransport.network.FirstNetworkAPI;
 import butterknife.BindString;
 import butterknife.ButterKnife;
 
-/**
- * Created by tunggul.jati on 15/08/2018.
- */
-
 public abstract class BaseDialogFragment extends DialogFragment {
 
     @BindString(R.string.loading)
