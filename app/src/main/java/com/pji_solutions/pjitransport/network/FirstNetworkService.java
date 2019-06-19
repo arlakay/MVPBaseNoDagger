@@ -19,7 +19,7 @@ public class FirstNetworkService {
 
     private FirstNetworkAPI api;
     //Development
-    public final String DEFAULT_BASEURL_PUBLIC = "http://35.198.229.154";
+    public final String DEFAULT_BASEURL_PUBLIC = "https://private-16555-erd.apiary-mock.com";
     private String baseUrl = DEFAULT_BASEURL_PUBLIC;
     public final int CONNECTION_TIMEOUT_IN_SECOND = 30;
     public FirstNetworkService () {

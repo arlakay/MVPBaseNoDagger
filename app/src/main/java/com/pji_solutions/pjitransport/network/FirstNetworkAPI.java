@@ -1,6 +1,15 @@
 package com.pji_solutions.pjitransport.network;
 
+import com.pji_solutions.pjitransport.model.resp.QuestionResp;
+
+import retrofit2.Call;
+import retrofit2.http.GET;
+
 public interface FirstNetworkAPI {
+
+    @GET("/questions")
+    Call<QuestionResp> getQuestions();
+
 //
 //    // AUTHENTICATION
 //    @Headers({"Accept: application/json", "Content-Type: application/json"})
