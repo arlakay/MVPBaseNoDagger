@@ -12,7 +12,7 @@
         android:text="a"/>
 
     <TextView
-        android:id="@+id/txt_vote"
+        android:id="@+id/txt_votes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="b"/>

@@ -36,7 +36,11 @@ public class MainActivity extends BaseActivity {
         presenter = new MainPresenter(this);
 
         setupToolbar();
-        initRV();
+//        initRV();
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        rvChoicr.setLayoutManager(layoutManager);
 
         presenter.getQuestions();
 
@@ -52,9 +56,6 @@ public class MainActivity extends BaseActivity {
     }
 
     public void initRV(){
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        rvChoicr.setLayoutManager(layoutManager);
         adapter = new MainAdapter(this, questionDetails);
         rvChoicr.setAdapter(adapter);
     }

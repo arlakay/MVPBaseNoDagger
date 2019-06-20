@@ -9,10 +9,6 @@ import android.os.Bundle;
 
 import com.erd.pjitransport.network.FirstNetworkAPI;
 import com.erd.pjitransport.network.FirstNetworkService;
-import com.erd.pjitransport.util.acra.ACRAReportSender;
-import com.erd.pjitransport.util.acra.LibraryCrash;
-
-import org.acra.ACRA;
 
 public class BaseApplication extends Application {
 
@@ -36,10 +32,10 @@ public class BaseApplication extends Application {
         setupAppSharedPreferences();
         currentApplication=this;
 
-        LibraryCrash.install(this);
-        ACRA.init(this);
-        ACRAReportSender reportSender = new ACRAReportSender(getBaseContext(), "pactera.report@gmail.com", "binimuda14");
-        ACRA.getErrorReporter().setReportSender(reportSender);
+//        LibraryCrash.install(this);
+//        ACRA.init(this);
+//        ACRAReportSender reportSender = new ACRAReportSender(getBaseContext(), "pactera.report@gmail.com", "binimuda14");
+//        ACRA.getErrorReporter().setReportSender(reportSender);
 
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override

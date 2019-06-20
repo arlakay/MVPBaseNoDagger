@@ -23,7 +23,6 @@ public class FirstNetworkService {
     public final int CONNECTION_TIMEOUT_IN_SECOND = 30;
     public FirstNetworkService () {
         Gson gson = new GsonBuilder()
-                .excludeFieldsWithoutExposeAnnotation()
                 .create();
         Retrofit retrofitSvc = new Retrofit.Builder()
                 .baseUrl(baseUrl)

@@ -30,17 +30,17 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
     @Override
     public MainAdapter.MainViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.row_item_list_question, viewGroup, false);
-        MainAdapter.MainViewHolder mainViewHolder = new MainViewHolder(itemView);
+        MainAdapter.MainViewHolder mainViewHolder = new MainAdapter.MainViewHolder(itemView);
         return mainViewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull MainAdapter.MainViewHolder viewHolder, int i) {
-        QuestionDetail item = questionDetailList.get(i);
+        final QuestionDetail item = questionDetailList.get(i);
         viewHolder.itemView.setTag(item);
 
         viewHolder.txtChoice.setText(item.getChoice());
-        viewHolder.txtVote.setText(item.getVotes());
+        viewHolder.txtVote.setText(String.valueOf(item.getVotes()));
 
     }
 
@@ -51,7 +51,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
     public static class MainViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.txt_choice) TextView txtChoice;
-    @BindView(R.id.txt_vote)TextView txtVote;
+    @BindView(R.id.txt_votes) TextView txtVote;
 
         public MainViewHolder(@NonNull View itemView) {
             super(itemView);

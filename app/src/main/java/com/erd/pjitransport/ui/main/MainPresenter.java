@@ -22,8 +22,9 @@ public class MainPresenter {
             public void onResponse(Call<QuestionResp> call, Response<QuestionResp> response) {
                 assert response.body() != null;
                 mContext.questionDetails.addAll(response.body().getChoices());
-                mContext.adapter = new MainAdapter(mContext, mContext.questionDetails);
-                mContext.adapter.notifyDataSetChanged();
+//                mContext.adapter = new MainAdapter(mContext, mContext.questionDetails);
+//                mContext.adapter.notifyDataSetChanged();
+                mContext.initRV();
             }
 
             @Override
